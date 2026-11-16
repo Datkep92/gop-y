@@ -1,0 +1,9 @@
+{
+  "name": "gop-y-feedback",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-08",
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  "vars": { "ALLOWED_ORIGINS": "https://datkep92.github.io,http://127.0.0.1:4173,http://localhost:4173" },
+  "d1_databases": [{ "binding": "DB", "database_name": "gop-y-feedback", "database_id": "a647dd22-7509-42d7-84a5-fd767c3f979d", "migrations_dir": "migrations" }]
+}

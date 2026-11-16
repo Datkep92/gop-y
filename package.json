@@ -1,0 +1,8 @@
+{
+  "name": "gop-y",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "test": "node --test tests/*.test.js", "check": "node --check public/app.js && node --check worker/index.js && node tools/check-static.mjs", "dev": "wrangler dev --port 18787 --inspector-port 19349", "deploy:api": "wrangler deploy" },
+  "engines": { "node": ">=22" }
+}
