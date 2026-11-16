@@ -16,3 +16,14 @@
 - API: https://gop-y-feedback.linhnhaxac10.workers.dev ; version 94b770d9-0356-4efa-90d6-ef599235e402.
 - Khắc phục lỗi chạy local: Wrangler cài đặt hỗ trợ đến 2026-10-08, đã đặt compatibility_date tương ứng; dùng cổng 18787 và inspector 19349 tránh cổng bị Windows chặn.
 - Công cụ trình duyệt trả về "Local browser use is disabled in Work settings". Chưa kiểm trực quan hoặc thao tác bằng trình duyệt, chưa đo 400 người đồng thời. Không coi kiểm source/API là bằng chứng browser.
+
+### Đã công bố
+
+- Public repo: https://github.com/Datkep92/gop-y ; nhánh main.
+- Web: https://datkep92.github.io/gop-y/ ; GitHub Pages dùng GitHub Actions.
+- Commit payload: ec419dee1f5f15931138e4ad4cb7aca1fad3b4b6.
+- Run https://github.com/Datkep92/gop-y/actions/runs/43925333234 hoàn tất thành công. Source 8/8 và kiểm cú pháp/toàn vẹn tĩnh đều đạt trên Actions.
+- Tải lại index.html, styles.css, app.js, config.js từ Pages: 4/4 HTTP 200, hash nội dung khớp bản local (chuẩn hóa CRLF/LF).
+- API health HTTP 200; GET feedback từ origin Pages HTTP 200, đúng CORS, 0 phiếu sau dọn dữ liệu thử.
+- Không công bố dữ liệu thử, token hoặc source của HoaDonNhe. Chưa kiểm trình duyệt, trải nghiệm điện thoại thực và tải 400 người đồng thời. Trạng thái tổng thể PARTIAL vì thiếu kiểm trình duyệt; phát hành Pages và kiểm API trên mạng đã đạt.
+- Bản ghi bàn giao này là thay đổi tài liệu sau phát hành, không thay payload web/Worker.
